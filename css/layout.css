@@ -1,0 +1,518 @@
+html {
+  background: #ffffff;
+  display: block;
+  position: relative;
+  /* width: 1920px; */
+}
+
+body {
+  height: auto;
+  width: 100%;
+  position: relative;
+  display: block;
+  margin: 0 auto;
+  background: #ffffff;
+}
+
+/* надпись */
+.fig {
+  position: absolute;
+  left: 86%;
+  top: 4%;
+  width: 11%;
+  height: 4.5vh;
+  font-size: 2vw;
+  font-family: "Helvetica_bold";
+  color: black;
+  background-color: white;
+  max-width: 100%;
+  max-height: 100%;
+  text-align: center;
+  vertical-align: middle;
+}
+
+/* надпись справа */
+.rightfig {
+  position: absolute;
+  left: 65%;
+  top: 4%;
+  width: 11%;
+  height: 4vh;
+  font-size: 2vw;
+  font-family: "Helvetica_bold";
+  color: black;
+  max-width: 100%;
+  max-height: 100%;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.rightfig2 {
+  position: absolute;
+  left: 65%;
+  top: 4%;
+  width: 31%;
+  height: 4.5vh;
+  font-size: 2vw;
+  font-family: "Helvetica_bold";
+  color: black;
+  background-color: white;
+  max-width: 100%;
+  max-height: 100%;
+  text-align: center;
+  vertical-align: middle;
+}
+
+/* разделитель */
+.divider {
+  background-image: url(../images/divider.svg);
+  width: 96vw;
+  height: 4vh;
+  margin-left: 2vw;
+  background-repeat: repeat-x;
+  background-size: auto 100%;
+  position: relative;
+  animation-name: run_first;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  &:hover {
+    animation-direction: reverse;
+  }
+}
+
+/* 1 секшен */
+.first {
+  height: 92vh;
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.left_block {
+  margin-right: 2vw;
+  margin-left: 2vw;
+  flex: 2;
+  height: 100%;
+}
+
+.right_blocks {
+  min-width: 40%;
+  margin-right: 2vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 1;
+  /* height: 98vh; */
+}
+
+/* квадратик с человечком */
+.first_rectangle {
+  background-image: url("../images/stripes_mask.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-style: solid;
+  min-width: 40%;
+  min-height: 100%;
+  position: relative;
+  /* порядок flexbox 1 */
+  /* order: 1; */
+  border-color: #000000;
+  border-left-width: 6px;
+  border-right-width: 6px;
+  flex: 1;
+}
+
+/* человечек */
+.person {
+  /* background-image: url("../images/person.svg"); */
+  position: absolute;
+  top: 52%;
+  left: 50%;
+  max-width: 100%;
+  max-height: 97%;
+  transform: translate(-50%, -50%);
+  /* background-position: center; */
+  background-size: cover;
+  background-repeat: no-repeat;
+  order: 1;
+}
+
+/* глазик */
+.circle {
+  background-image: url("../images/circle.svg");
+  position: absolute;
+  /* order: 2; */
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 8%;
+  height: 8%;
+  top: 40%;
+  left: 70%;
+  transform: translate(-50%, -50%);
+}
+
+/* бровь */
+.eyebrow {
+  position: absolute;
+  content: url("../images/eye_brow.svg");
+  max-height: 100%;
+  max-width: 100%;
+  top: -60%;
+  left: -35%;
+  transform-origin: bottom right 60px;
+  animation-name: circle;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+/* квадратик с облаком */
+.second_rectangle {
+  border-style: solid;
+  /* width: 40%; */
+  /* height: 766px; */
+  /* height: 75%; */
+  position: relative;
+  flex: 1;
+  margin-bottom: 4vh;
+  border-color: #000000;
+  border-bottom-width: 6px;
+  border-left-width: 6px;
+  border-right-width: 6px;
+}
+
+.cloud {
+  /* background-image: url(../images/cloud_all.svg); */
+  position: absolute;
+  top: 9%;
+  left: 1%;
+  max-height: 100%;
+  max-width: 100%;
+  background-size: cover;
+  animation: moveCloud 2s linear infinite alternate;
+}
+
+/* квадратик с бегущим лого */
+.third_rectangle {
+  border-style: solid;
+  height: 15%;
+  position: relative;
+  border-color: #000000;
+  padding: 1vw;
+  border-left-width: 6px;
+  border-right-width: 6px;
+  border-top-width: 6px;
+}
+
+.ctrlz {
+  background-image: url("../images/logo_run.svg");
+  height: 16vh;
+  max-width: 100%;
+  margin-top: 0;
+  overflow: hidden;
+  animation: run_logo 4s linear infinite;
+}
+
+/* 2 секшн */
+.second {
+  height: 70vh;
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+/* 4 квадратик */
+.fourth_rectangle {
+  background-image: url("../images/dots.svg");
+  background-repeat: no-repeat;
+  border-style: solid;
+  background-size: cover;
+  min-width: 40%;
+  min-height: 100%;
+  position: relative;
+  flex: 1;
+  border-color: #000000;
+  border-left-width: 8px;
+  border-right-width: 8px;
+}
+
+.button_ctrlz {
+  background-image: url("../images/ctrl_z_1.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 28%;
+  left: 14%;
+  width: 86%;
+  max-width: 100%;
+  max-height: 100%;
+  height: 49%;
+  background-position: right;
+}
+
+.button_ctrlz:hover {
+  background-image: url("../images/ctrl_z.svg");
+}
+
+/* квадратик с плюсами и минусами */
+.fifth_rectangle {
+  background-image: url("../images/dots2.svg");
+  border-style: solid;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  flex: 1;
+  margin-bottom: 4vh;
+  border-color: #000000;
+  border-bottom-width: 6px;
+  border-left-width: 6px;
+  border-right-width: 6px;
+}
+
+.white_background {
+  background-image: url("../images/white_background.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 52.5%;
+  left: 50%;
+  width: 100%;
+  max-width: 100%;
+  max-height: 100%;
+  height: 72%;
+  transform: translate(-50%, -50%);
+}
+
+.anim_text {
+  position: absolute;
+  height: 16%;
+  width: 60%;
+  top: 81%;
+  left: 22%;
+  max-width: 100%;
+  max-height: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  /* transform: translate(-50%, -50%); */
+}
+
+span {
+  width: 31ch;
+  color: black;
+  font-family: "Helvetica_bold";
+  font-size: 2vw;
+  animation: printed_text 6s step-start infinite both;
+}
+
+.l1 {
+  animation-delay: 0s;
+}
+.l2 {
+  animation-delay: 0.2s;
+}
+.l3 {
+  animation-delay: 0.4s;
+}
+.l4 {
+  animation-delay: 0.6s;
+}
+.l5 {
+  animation-delay: 0.8s;
+}
+.l6 {
+  animation-delay: 1s;
+}
+.l7 {
+  animation-delay: 1.2s;
+}
+.l8 {
+  animation-delay: 1.4s;
+}
+.l9 {
+  animation-delay: 1.6s;
+}
+.l10 {
+  animation-delay: 1.8s;
+}
+.l11 {
+  animation-delay: 2s;
+}
+.l12 {
+  animation-delay: 2.2s;
+}
+.l13 {
+  animation-delay: 2.4s;
+}
+.l14 {
+  animation-delay: 2.6s;
+}
+.l15 {
+  animation-delay: 2.8s;
+}
+.l16 {
+  animation-delay: 3s;
+}
+.l17 {
+  animation-delay: 3.2s;
+}
+.l18 {
+  animation-delay: 3.4s;
+}
+.l19 {
+  animation-delay: 3.6s;
+}
+
+.flex_symbols {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.flex_horizontal {
+  position: absolute;
+  left: 9%;
+  top: 17%;
+  display: flex;
+  height: 65%;
+  width: 100%;
+  max-width: 100%;
+  max-height: 100%;
+  justify-content: space-between;
+}
+
+.container {
+  height: 26%;
+  width: 32%;
+  max-width: 100vw;
+  max-height: 100vh;
+  background-position: center;
+}
+
+.black_round {
+  background-image: url("../images/flex_black_round.svg");
+  background-repeat: no-repeat;
+  animation: change_color_of_black 0.5s infinite;
+}
+
+.white_round {
+  background-image: url("../images/flex_white_round.svg");
+  background-repeat: no-repeat;
+  animation: change_color_of_white 0.5s infinite;
+}
+
+.plus {
+  background-image: url("../images/plus.svg");
+  background-repeat: no-repeat;
+}
+
+.minus {
+  background-image: url("../images/minus.svg");
+  background-repeat: no-repeat;
+  /* background-position: left; */
+  width: 32%;
+  height: 11%;
+}
+
+.sixth_rectangle {
+  border-style: solid;
+  /* width: 100%; */
+  height: 16%;
+  position: relative;
+  /* flex: 1; */
+  border-color: #000000;
+  padding: 1vw;
+  border-left-width: 6px;
+  border-right-width: 6px;
+  border-top-width: 6px;
+}
+
+.stripe {
+  background-image: url("../images/polosochka.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 47%;
+  left: 0%;
+  width: 100%;
+  max-width: 100%;
+  max-height: 100%;
+  height: 28vh;
+}
+
+.round_dash {
+  background-image: url("../images/round_with_dash.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: -13%;
+  left: 15%;
+  width: 6%;
+  max-width: 100%;
+  max-height: 100%;
+  height: 100%;
+  animation: move-zigzag-forward 4s infinite linear;
+}
+
+.round_dash:hover {
+  animation-play-state: paused;
+}
+
+.third {
+  height: 70vh;
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.left_block2 {
+  /* flex: 0 0 60vw; Ширина блока равна 60% от ширины окна просмотра */
+  /* min-width: 52%; */
+  margin-right: 2vw;
+  margin-left: 2vw;
+  flex: 2;
+  height: 100%;
+}
+
+/* обернула в div и вид колонки */
+.right_block2 {
+  min-width: 40%;
+  margin-right: 2vw;
+  display: flex;
+  flex-direction: column;
+  /* flex: 0 0 38vw; Ширина блоков равна 38% от ширины окна просмотра */
+  justify-content: space-between; /* Распределение блоков с вертикальным отступом */
+  flex: 1;
+  /* height: 98vh; */
+}
+
+.seventh_rectangle {
+  background-image: url("../images/stripes.svg");
+  background-repeat: no-repeat;
+  border-style: solid;
+  background-size: cover;
+  min-width: 40%;
+  min-height: 100%;
+  position: relative;
+  flex: 1;
+  border-color: #000000;
+  border-left-width: 8px;
+  border-right-width: 8px;
+}
+
+.eigth_rectangle {
+  background-image: url("../images/stripes_right.svg");
+  border-style: solid;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  flex: 1;
+  border-color: #000000;
+  border-left-width: 6px;
+  border-right-width: 6px;
+}
