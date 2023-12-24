@@ -1,0 +1,308 @@
+@media (max-width: 1440px) {
+  .first-section {
+    height: 90vh;
+  }
+
+  .progressbar2 {
+    height: 17vh;
+  }
+}
+
+@media (max-width: 1024px) {
+  .first-section {
+    height: 75vh;
+  }
+
+  .progressbar2 {
+    height: 14vh;
+  }
+}
+
+@media (max-width: 770px) {
+  .display-flex {
+    flex-direction: row;
+  }
+
+  .head {
+    border-bottom: 4px solid black;
+  }
+
+  .part {
+    border-left: 4px solid black;
+    border-right: 4px solid black;
+  }
+
+  .figure3 {
+    border-bottom: 0;
+    height: 100%;
+    /* background: url(../images/dots_table.svg) center/cover no-repeat; */
+  }
+
+  .figure {
+    border-bottom: 4px solid black;
+    height: 100%;
+    margin-bottom: 2%;
+  }
+
+  .plusminrect {
+    border-bottom: 0;
+    height: 100%;
+    background: url(../images/dots_table.svg) center/cover no-repeat;
+  }
+
+  .fig {
+    height: 2vh;
+  }
+
+  .line,
+  .line2 {
+    border-top: 4px solid black;
+    width: 100%;
+    background-repeat: repeat-x;
+    background-size: auto 100%;
+    animation: run_logo 1s linear infinite;
+  }
+
+  .line2 {
+    height: 24%;
+  }
+
+  .zigzag {
+    border-top: 4px solid black;
+    width: 100%;
+    background-repeat: repeat-x;
+    background-size: auto 100%;
+    animation: run_logo 1s linear infinite;
+    display: none;
+  }
+
+  .first-section {
+    width: 100%;
+    height: 41vh;
+    max-height: 100%;
+    max-width: 100%;
+    margin-bottom: 13%;
+  }
+
+  .second-section,
+  .third-section {
+    width: 100%;
+    height: 30vh;
+    max-height: 100%;
+    max-width: 100%;
+    margin-bottom: 0;
+  }
+
+  .fourth-section {
+    width: 100%;
+    height: 41vh;
+    max-height: 100%;
+    max-width: 100%;
+    margin-bottom: 16%;
+  }
+
+  .rightfig2 {
+    height: 2vh;
+  }
+
+  .divider {
+    width: 98vw;
+    height: 2vh;
+  }
+
+  .progressbar {
+    height: 10vh;
+  }
+
+  .progressbar2 {
+    height: 9vh;
+  }
+
+  .progress_group2 {
+    width: 220%;
+  }
+
+  .addtablet {
+    display: inline;
+  }
+
+  .divider2 {
+    height: 2vh;
+    display: inline;
+  }
+
+  .footer {
+    height: 10vh;
+    border-left: 4px solid black;
+    border-right: 4px solid black;
+  }
+
+  .hse {
+    width: 23vw;
+    height: 7vh;
+    top: 16%;
+    left: 76%;
+  }
+
+  .fio {
+    width: 17vw;
+    height: 4vh;
+    top: 55%;
+    left: 2%;
+  }
+}
+
+@media (max-width: 430px) {
+  .first-section,
+  .second-section {
+    height: 100vh;
+    margin-bottom: 0;
+  }
+
+  .fourth-section {
+    height: 55vh;
+    margin-bottom: 0;
+  }
+
+  .third-section {
+    height: 38vh;
+    margin-bottom: 0;
+  }
+
+  .display-flex {
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+
+  .head,
+  .figure,
+  .buttonctrl,
+  .figure2,
+  .atom,
+  .figure3 {
+    width: 100%;
+    height: 100%;
+    max-height: 100%;
+    max-width: 100%;
+  }
+
+  .electrcirc {
+    width: 100%;
+    height: 100%;
+    max-height: 100%;
+    max-width: 100%;
+  }
+
+  .electschema {
+    display: none;
+  }
+
+  .fig {
+    width: 12%;
+    height: 2vh;
+    font-size: 4vw;
+  }
+
+  .rightfig {
+    width: 21%;
+    height: 1.5vh;
+    font-size: 4vw;
+    left: 70%;
+  }
+
+  .figure,
+  .plusminrect,
+  .line2 {
+    order: 1;
+    margin-bottom: 0;
+  }
+
+  .line2 {
+    height: 20%;
+  }
+
+  .progressbar2 {
+    height: 10vh;
+  }
+
+  #order {
+    order: 3;
+  }
+
+  .plusminrect {
+    width: 100%;
+  }
+
+  .line {
+    height: 30%;
+    animation: run_logo 2s linear infinite;
+  }
+
+  .zigzag {
+    height: 30%;
+    animation: run_logo 2s linear infinite;
+    display: inline;
+  }
+
+  .divider {
+    height: 1vh;
+  }
+
+  .cloud1 {
+    top: 10%;
+    height: 92%;
+    width: 100%;
+  }
+
+  .divider2 {
+    display: none;
+  }
+
+  .part {
+    border: 2px solid black;
+  }
+
+  .progressbar {
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+  }
+
+  .footer {
+    height: 10vh;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+  }
+
+  .hse {
+    width: 33vw;
+    height: 6vh;
+    top: 28%;
+    left: 65%;
+  }
+
+  .fio {
+    font-size: 4vw;
+    width: 36vw;
+    height: 4vh;
+    top: 46%;
+    left: 2%;
+  }
+
+  .divider1 {
+    background-image: url(../images/divider.svg);
+    width: 98vw;
+    height: 2vh;
+    /* margin-left: 2vw; */
+    background-repeat: repeat-x;
+    background-size: auto 100%;
+    position: relative;
+    animation-name: run_first;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    display: inline;
+    &:hover {
+      animation-direction: reverse;
+    }
+  }
+}

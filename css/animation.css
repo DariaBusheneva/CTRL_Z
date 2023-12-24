@@ -40,6 +40,16 @@
   }
 }
 
+@keyframes run_logo2 {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-40%); } /* Перемещение контента на половину его ширины */
+}
+
+@keyframes run_logo3 {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-45%); } /* Перемещение контента на половину его ширины */
+}
+
 @keyframes move-zigzag-forward {
   0% {
     transform: translate(-6vw, 0);
