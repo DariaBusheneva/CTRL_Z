@@ -16,6 +16,10 @@
   .progressbar2 {
     height: 14vh;
   }
+
+  .round_dash {
+    top: -11%;
+  }
 }
 
 @media (max-width: 770px) {
@@ -168,7 +172,7 @@
   }
 
   .fourth-section {
-    height: 55vh;
+    height: 100vh;
     margin-bottom: 0;
   }
 

@@ -233,7 +233,7 @@ body {
 .button_ctrlz {
   background: url(../images/ctrl_z_1.svg) center/contain no-repeat;
   position: absolute;
-  top: 31%;
+  top: 30%;
   left: 10%;
   width: 90%;
   max-width: 100%;
@@ -261,7 +261,11 @@ body {
 }
 
 .plusmininside {
-  /* background: url(../images/cloud_all.svg) center/contain no-repeat; */
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
   background-color: white;
   position: relative;
   border-top: 4px solid black;
@@ -272,7 +276,74 @@ body {
   left: 0;
   max-height: 100%;
   max-width: 100%;
-  /* animation: moveCloud 2s linear infinite alternate; */
+}
+
+.equal_square {
+  position: relative;
+  width: 25%;
+  height: 50%;
+  border-right: 4px solid black;
+  border-top: 4px solid black;
+  border-bottom: 4px solid black;
+}
+.equal_square2 {
+  position: relative;
+  width: 25%;
+  height: 50%;
+  border-right: 4px solid black;
+  border-top: 4px solid black;
+  border-bottom: 4px solid black;
+}
+.equal_square3 {
+  position: relative;
+  width: 25%;
+  height: 50%;
+  border-right: 4px solid black;
+  border-top: 4px solid black;
+  border-bottom: 4px solid black;
+}
+.equal_square4 {
+  position: relative;
+  width: 25%;
+  height: 50%;
+  border-top: 4px solid black;
+  border-bottom: 4px solid black;
+}
+
+.container {
+  position: relative;
+  bottom: 27%;
+  left: 33%;
+  height: 51%;
+  width: 32%;
+  max-width: 100vw;
+  max-height: 100vh;
+  background-position: center;
+}
+
+.black_round {
+  background-image: url("../images/flex_black_round.svg");
+  background-repeat: no-repeat;
+  animation: change_color_of_black 0.5s infinite;
+}
+
+.white_round {
+  background-image: url("../images/flex_white_round.svg");
+  background-repeat: no-repeat;
+  animation: change_color_of_white 0.5s infinite;
+}
+
+.plus {
+  background-image: url("../images/plus.svg");
+  background-repeat: no-repeat;
+}
+
+.minus {
+  background-image: url("../images/minus.svg");
+  background-repeat: no-repeat;
+  /* background-position: left; */
+  width: 32%;
+  height: 51%;
 }
 
 .zigzag {
@@ -280,7 +351,37 @@ body {
   position: relative;
   width: 45%;
   height: 20%;
-  animation: run_logo 4s linear infinite;
+}
+
+.stripe {
+  background-image: url("../images/polosochka.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 47%;
+  left: 0%;
+  width: 100%;
+  max-width: 100%;
+  max-height: 100%;
+  height: 28vh;
+}
+
+.round_dash {
+  background-image: url("../images/round_with_dash.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: -14%;
+  left: 15%;
+  width: 2.5vw;
+  max-width: 100%;
+  max-height: 100%;
+  height: 100%;
+  animation: move-zigzag-forward 5s infinite linear;
+}
+
+.round_dash:hover {
+  animation-play-state: paused;
 }
 
 /* третий section */
@@ -420,7 +521,8 @@ body {
   max-width: 100%; */
 }
 
-.left_stripe, .right_stripe {
+.left_connector,
+.right_connector {
   background-image: url(../images/wire.svg);
   background-position: center;
   background-repeat: no-repeat;
@@ -444,7 +546,27 @@ body {
   max-height: 100%;
   max-width: 40%;
   animation: circle_atom 3s linear infinite reverse;
+}
 
+.circle_with_cross {
+  background-image: url(../images/circle_with_cross.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  top: 29%;
+  left: 37%;
+  width: 28%;
+  height: 40%;
+  max-height: 100%;
+  max-width: 100%;
+}
+
+.circle_with_cross:hover {
+  background-image: url(../images/circle_with_cross_black.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 /* верхний правый блок */
@@ -779,39 +901,6 @@ body {
   justify-content: space-between;
 }
 
-.container {
-  height: 26%;
-  width: 32%;
-  max-width: 100vw;
-  max-height: 100vh;
-  background-position: center;
-}
-
-.black_round {
-  background-image: url("../images/flex_black_round.svg");
-  background-repeat: no-repeat;
-  animation: change_color_of_black 0.5s infinite;
-}
-
-.white_round {
-  background-image: url("../images/flex_white_round.svg");
-  background-repeat: no-repeat;
-  animation: change_color_of_white 0.5s infinite;
-}
-
-.plus {
-  background-image: url("../images/plus.svg");
-  background-repeat: no-repeat;
-}
-
-.minus {
-  background-image: url("../images/minus.svg");
-  background-repeat: no-repeat;
-  /* background-position: left; */
-  width: 32%;
-  height: 11%;
-}
-
 .sixth_rectangle {
   border-style: solid;
   /* width: 100%; */
@@ -825,7 +914,7 @@ body {
   border-top-width: 6px;
 }
 
-.stripe {
+/* .stripe {
   background-image: url("../images/polosochka.svg");
   background-size: contain;
   background-repeat: no-repeat;
@@ -854,7 +943,7 @@ body {
 
 .round_dash:hover {
   animation-play-state: paused;
-}
+} */
 
 .third {
   height: 70vh;
