@@ -62,6 +62,7 @@ body {
   max-height: 100%;
   top: 54%;
   left: 50%;
+  bottom: 0;
   transform: translate(-50%, -50%);
 }
 
@@ -229,27 +230,25 @@ body {
   background: url(../images/dots.svg) center/cover no-repeat;
 }
 
-.zigzag {
-  border-top: 8px solid black;
-  position: relative;
-  width: 45%;
-  height: 20%;
-  animation: run_logo 4s linear infinite;
-}
-
 .button_ctrlz {
   background: url(../images/ctrl_z_1.svg) center/contain no-repeat;
   position: absolute;
-  top: 28%;
-  left: 14%;
-  width: 86%;
+  top: 31%;
+  left: 10%;
+  width: 90%;
   max-width: 100%;
   max-height: 100%;
-  height: 49%;
+  height: 50%;
   background-position: right;
 }
 
 .button_ctrlz:hover {
+  top: 31%;
+  left: 10%;
+  width: 90%;
+  max-width: 100%;
+  max-height: 100%;
+  height: 50%;
   background: url(../images/ctrl_z.svg) center/contain no-repeat;
 }
 
@@ -259,6 +258,29 @@ body {
   position: relative;
   border-bottom: 8px solid black;
   background: url(../images/dots2.svg) center/cover no-repeat;
+}
+
+.plusmininside {
+  /* background: url(../images/cloud_all.svg) center/contain no-repeat; */
+  background-color: white;
+  position: relative;
+  border-top: 4px solid black;
+  border-bottom: 4px solid black;
+  height: 80%;
+  width: 100vw;
+  top: 11%;
+  left: 0;
+  max-height: 100%;
+  max-width: 100%;
+  /* animation: moveCloud 2s linear infinite alternate; */
+}
+
+.zigzag {
+  border-top: 8px solid black;
+  position: relative;
+  width: 45%;
+  height: 20%;
+  animation: run_logo 4s linear infinite;
 }
 
 /* третий section */
@@ -279,11 +301,37 @@ body {
   background: url(../images/mask_stripes_group.svg) center/cover no-repeat;
 }
 
+.electrcircins {
+  background-color: white;
+  position: relative;
+  border-top: 8px solid black;
+  border-bottom: 8px solid black;
+  height: 76%;
+  width: 100vw;
+  top: 12%;
+  left: 0;
+  max-height: 100%;
+  max-width: 100%;
+}
+
 .electschema {
   width: 45%;
   height: 100%;
   position: relative;
   background: url(../images/stripes_2.svg) center/cover no-repeat;
+}
+
+.electschemains {
+  background-color: white;
+  position: relative;
+  border-top: 8px solid black;
+  border-bottom: 8px solid black;
+  height: 76%;
+  width: 100vw;
+  top: 12%;
+  left: 0;
+  max-height: 100%;
+  max-width: 100%;
 }
 
 /* work in progress разделитель */
@@ -332,13 +380,50 @@ body {
 
 /* верхний левый блок */
 .atom {
+  background: url(../images/grid.svg) center/cover no-repeat;
   position: relative;
   width: 53%;
   height: 100%;
   max-width: 53%;
   max-height: 100%;
-  background: url(../images/grid.svg) center/cover no-repeat;
 }
+
+.vans {
+  background: url(../images/mask_squares_group.svg) center/cover no-repeat;
+  position: relative;
+  background-color: white;
+  position: relative;
+  border-top: 8px solid black;
+  border-bottom: 8px solid black;
+  height: 54%;
+  width: 100vw;
+  top: 22%;
+  left: 0;
+  max-height: 100%;
+  max-width: 100%;
+}
+
+.void_rectangle {
+  background-color: white;
+  position: relative;
+  border-top: 8px solid black;
+  border-bottom: 8px solid black;
+  height: 87%;
+  width: 100%;
+  top: 7%;
+  max-height: 100%;
+  max-width: 100%;
+}
+
+.atom_circle {
+  background: url(../images/atom.svg) center/contain no-repeat;
+  position: relative;
+  height: 100%;
+  width: 100%;
+  max-height: 100%;
+  max-width: 100%;
+}
+
 /* верхний правый блок */
 .figure3 {
   width: 45%;
@@ -347,6 +432,192 @@ body {
   border-bottom: 8px solid black;
   background: url(../images/squares_right.svg) center/cover no-repeat;
 }
+
+.void_rectangle2 {
+  background-color: white;
+  position: relative;
+  border: 8px solid black;
+  height: 91%;
+  width: 92%;
+  top: 4.5%;
+  left: 4%;
+  max-height: 100%;
+  max-width: 100%;
+}
+
+.rightfig3 {
+  position: absolute;
+  left: 65%;
+  top: 4%;
+  width: 13vw;
+  height: 4.5vh;
+  font-size: 2vw;
+  font-family: "Helvetica_bold";
+  color: black;
+  max-width: 100%;
+  max-height: 100%;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.anim_text {
+  position: absolute;
+  height: 7%;
+  width: 32%;
+  top: 16%;
+  left: 4%;
+  max-width: 100%;
+  max-height: 100%;
+  flex-wrap: wrap;
+  white-space: nowrap;
+  overflow: hidden;
+  /* transform: translate(-50%, -50%); */
+}
+
+.anim_text2 {
+  position: absolute;
+  height: 7%;
+  width: 70%;
+  top: 25%;
+  left: 4%;
+  max-width: 100%;
+  max-height: 100%;
+  flex-wrap: wrap;
+  white-space: nowrap;
+  overflow: hidden;
+  /* transform: translate(-50%, -50%); */
+}
+
+span {
+  width: 31ch;
+  color: black;
+  font-family: "Helvetica_bold";
+  font-size: 2vw;
+  animation: printed_text 6s step-start infinite both;
+}
+
+.l1 {
+  animation-delay: 0s;
+}
+.l2 {
+  animation-delay: 0.2s;
+}
+.l3 {
+  animation-delay: 0.4s;
+}
+.l4 {
+  animation-delay: 0.6s;
+}
+.l5 {
+  animation-delay: 0.8s;
+}
+.l6 {
+  animation-delay: 1s;
+}
+.l7 {
+  animation-delay: 1.2s;
+}
+.l8 {
+  animation-delay: 1.4s;
+}
+.l9 {
+  animation-delay: 1.6s;
+}
+.l10 {
+  animation-delay: 1.8s;
+}
+.l11 {
+  animation-delay: 2s;
+}
+.l12 {
+  animation-delay: 2.2s;
+}
+.l13 {
+  animation-delay: 2.4s;
+}
+.l14 {
+  animation-delay: 2.6s;
+}
+.l15 {
+  animation-delay: 2.8s;
+}
+.l16 {
+  animation-delay: 3s;
+}
+.l17 {
+  animation-delay: 3.2s;
+}
+.l18 {
+  animation-delay: 3.4s;
+}
+.l19 {
+  animation-delay: 3.6s;
+}
+
+.r1 {
+  animation-delay: 0s;
+}
+.r2 {
+  animation-delay: 0.2s;
+}
+.r3 {
+  animation-delay: 0.4s;
+}
+.r4 {
+  animation-delay: 0.6s;
+}
+.r5 {
+  animation-delay: 0.8s;
+}
+.r6 {
+  animation-delay: 1s;
+}
+.r7 {
+  animation-delay: 1.2s;
+}
+.r8 {
+  animation-delay: 1.4s;
+}
+.r9 {
+  animation-delay: 1.6s;
+}
+.r10 {
+  animation-delay: 1.8s;
+}
+.r11 {
+  animation-delay: 2s;
+}
+.r12 {
+  animation-delay: 2.2s;
+}
+.r13 {
+  animation-delay: 2.4s;
+}
+.r14 {
+  animation-delay: 2.6s;
+}
+.r15 {
+  animation-delay: 2.8s;
+}
+.r16 {
+  animation-delay: 3s;
+}
+.r17 {
+  animation-delay: 3.2s;
+}
+.r18 {
+  animation-delay: 3.4s;
+}
+.r19 {
+  animation-delay: 3.6s;
+}
+.r20 {
+  animation-delay: 3.8s;
+}
+.r21 {
+  animation-delay: 4s;
+}
+
 /* нижний правый блок */
 .figure2 {
   width: 45%;
@@ -445,85 +716,6 @@ body {
   max-height: 100%;
   height: 72%;
   transform: translate(-50%, -50%);
-}
-
-.anim_text {
-  position: absolute;
-  height: 16%;
-  width: 60%;
-  top: 81%;
-  left: 22%;
-  max-width: 100%;
-  max-height: 100%;
-  white-space: nowrap;
-  overflow: hidden;
-  /* transform: translate(-50%, -50%); */
-}
-
-span {
-  width: 31ch;
-  color: black;
-  font-family: "Helvetica_bold";
-  font-size: 2vw;
-  animation: printed_text 6s step-start infinite both;
-}
-
-.l1 {
-  animation-delay: 0s;
-}
-.l2 {
-  animation-delay: 0.2s;
-}
-.l3 {
-  animation-delay: 0.4s;
-}
-.l4 {
-  animation-delay: 0.6s;
-}
-.l5 {
-  animation-delay: 0.8s;
-}
-.l6 {
-  animation-delay: 1s;
-}
-.l7 {
-  animation-delay: 1.2s;
-}
-.l8 {
-  animation-delay: 1.4s;
-}
-.l9 {
-  animation-delay: 1.6s;
-}
-.l10 {
-  animation-delay: 1.8s;
-}
-.l11 {
-  animation-delay: 2s;
-}
-.l12 {
-  animation-delay: 2.2s;
-}
-.l13 {
-  animation-delay: 2.4s;
-}
-.l14 {
-  animation-delay: 2.6s;
-}
-.l15 {
-  animation-delay: 2.8s;
-}
-.l16 {
-  animation-delay: 3s;
-}
-.l17 {
-  animation-delay: 3.2s;
-}
-.l18 {
-  animation-delay: 3.4s;
-}
-.l19 {
-  animation-delay: 3.6s;
 }
 
 .flex_symbols {
