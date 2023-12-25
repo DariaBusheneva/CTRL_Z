@@ -126,3 +126,16 @@
     background-image: url("../images/flex_black_round.svg");
   }
 }
+
+
+@keyframes circle_atom {
+  0% {
+    transform: rotate(0deg);
+  }
+  /* 50% {
+    transform: rotate(180deg);
+  } */
+  100% {
+    transform: rotate(360deg);
+  }
+}

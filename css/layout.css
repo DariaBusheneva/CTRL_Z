@@ -404,6 +404,11 @@ body {
 }
 
 .void_rectangle {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  flex-direction: row;
+  flex-wrap: nowrap;
   background-color: white;
   position: relative;
   border-top: 8px solid black;
@@ -411,17 +416,35 @@ body {
   height: 87%;
   width: 100%;
   top: 7%;
-  max-height: 100%;
-  max-width: 100%;
+  /* max-height: 100%;
+  max-width: 100%; */
+}
+
+.left_stripe, .right_stripe {
+  background-image: url(../images/wire.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  /* position: relative; */
+  width: 33%;
+  height: 100%;
+  /* display: inline-block; */
+  /* max-height: 200%;
+  max-width: 200%; */
 }
 
 .atom_circle {
-  background: url(../images/atom.svg) center/contain no-repeat;
+  background-image: url(../images/circuls.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
   position: relative;
+  width: 44%;
   height: 100%;
-  width: 100%;
   max-height: 100%;
-  max-width: 100%;
+  max-width: 40%;
+  animation: circle_atom 3s linear infinite reverse;
+
 }
 
 /* верхний правый блок */
@@ -471,6 +494,7 @@ body {
   flex-wrap: wrap;
   white-space: nowrap;
   overflow: hidden;
+  display: none;
   /* transform: translate(-50%, -50%); */
 }
 
@@ -485,15 +509,32 @@ body {
   flex-wrap: wrap;
   white-space: nowrap;
   overflow: hidden;
+  display: none;
   /* transform: translate(-50%, -50%); */
 }
 
-span {
+.span {
   width: 31ch;
   color: black;
   font-family: "Helvetica_bold";
   font-size: 2vw;
-  animation: printed_text 6s step-start infinite both;
+  animation: printed_text 6s both;
+}
+
+.span2 {
+  width: 31ch;
+  color: black;
+  font-family: "Helvetica_bold";
+  font-size: 2vw;
+  animation: printed_text 6s both;
+}
+
+.void_rectangle2:hover .anim_text {
+  display: inline;
+}
+
+.void_rectangle2:hover .anim_text2 {
+  display: inline;
 }
 
 .l1 {
@@ -555,67 +596,67 @@ span {
 }
 
 .r1 {
-  animation-delay: 0s;
-}
-.r2 {
-  animation-delay: 0.2s;
-}
-.r3 {
-  animation-delay: 0.4s;
-}
-.r4 {
-  animation-delay: 0.6s;
-}
-.r5 {
-  animation-delay: 0.8s;
-}
-.r6 {
-  animation-delay: 1s;
-}
-.r7 {
-  animation-delay: 1.2s;
-}
-.r8 {
-  animation-delay: 1.4s;
-}
-.r9 {
-  animation-delay: 1.6s;
-}
-.r10 {
-  animation-delay: 1.8s;
-}
-.r11 {
-  animation-delay: 2s;
-}
-.r12 {
-  animation-delay: 2.2s;
-}
-.r13 {
-  animation-delay: 2.4s;
-}
-.r14 {
-  animation-delay: 2.6s;
-}
-.r15 {
-  animation-delay: 2.8s;
-}
-.r16 {
-  animation-delay: 3s;
-}
-.r17 {
-  animation-delay: 3.2s;
-}
-.r18 {
-  animation-delay: 3.4s;
-}
-.r19 {
-  animation-delay: 3.6s;
-}
-.r20 {
   animation-delay: 3.8s;
 }
-.r21 {
+.r2 {
   animation-delay: 4s;
+}
+.r3 {
+  animation-delay: 4.2s;
+}
+.r4 {
+  animation-delay: 4.4s;
+}
+.r5 {
+  animation-delay: 4.6s;
+}
+.r6 {
+  animation-delay: 4.8s;
+}
+.r7 {
+  animation-delay: 5s;
+}
+.r8 {
+  animation-delay: 5.2s;
+}
+.r9 {
+  animation-delay: 5.4s;
+}
+.r10 {
+  animation-delay: 5.6s;
+}
+.r11 {
+  animation-delay: 5.8s;
+}
+.r12 {
+  animation-delay: 6s;
+}
+.r13 {
+  animation-delay: 6.2s;
+}
+.r14 {
+  animation-delay: 6.4s;
+}
+.r15 {
+  animation-delay: 6.6s;
+}
+.r16 {
+  animation-delay: 6.8s;
+}
+.r17 {
+  animation-delay: 7s;
+}
+.r18 {
+  animation-delay: 7.2s;
+}
+.r19 {
+  animation-delay: 7.4s;
+}
+.r20 {
+  animation-delay: 7.8s;
+}
+.r21 {
+  animation-delay: 8s;
 }
 
 /* нижний правый блок */
