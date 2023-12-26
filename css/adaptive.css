@@ -125,7 +125,7 @@
     right: 16%;
     width: 57vw;
     height: 56vh;
-}
+  }
 }
 
 @media (max-width: 1440px) and (max-height: 690px) {
@@ -315,6 +315,14 @@
     flex-direction: row;
   }
 
+  .anim_text {
+    display: inline;
+  }
+
+  .anim_text2 {
+    display: inline;
+  }
+
   .head {
     border-bottom: 4px solid black;
   }
@@ -344,6 +352,23 @@
 
   .fig {
     height: 2vh;
+  }
+
+  .equal_square,
+  .equal_square2,
+  .equal_square3 {
+    border-right: 2px solid black;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+  }
+
+  .equal_square4 {
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+  }
+
+  .progress_group {
+    animation: run_logo2 3s ease infinite;
   }
 
   .line,
