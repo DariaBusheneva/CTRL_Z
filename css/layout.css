@@ -250,6 +250,7 @@ body {
   max-height: 100%;
   height: 50%;
   background: url(../images/ctrl_z.svg) center/contain no-repeat;
+  background-position: right;
 }
 
 .plusminrect {
@@ -355,7 +356,7 @@ body {
 
 .anim_text0 {
   position: absolute;
-  height: 7%;
+  height: 9%;
   width: 70%;
   top: 77%;
   left: 24%;
@@ -580,7 +581,7 @@ body {
   max-height: 100vh;
   background-position: center;
   margin-bottom: 33%;
-  }
+}
 
 .circle_1 {
   background-image: url("../images/ellipse_anim_tocross.svg");
@@ -632,10 +633,26 @@ body {
   left: 0;
   max-height: 100%;
   max-width: 100%;
+  /* display: flex; */
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  overflow: hidden;
+}
+
+.extra_schema {
+  background-image: url(../images/whit_tochki.svg);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: relative;
+  right: 16%;
+  width: 57vw;
+  height: 56vh;
+  animation: move_schema 3s linear infinite;
 }
 
 /* work in progress разделитель */
-
 .progressbar {
   overflow: hidden;
   height: 22vh;
@@ -806,7 +823,7 @@ body {
 
 .anim_text {
   position: absolute;
-  height: 7%;
+  height: 9%;
   width: 35%;
   top: 16%;
   left: 4%;
@@ -820,7 +837,7 @@ body {
 
 .anim_text2 {
   position: absolute;
-  height: 7%;
+  height: 9%;
   width: 70%;
   top: 25%;
   left: 4%;
@@ -1040,289 +1057,11 @@ body {
 
 .hse {
   position: absolute;
-  background: url(../images/logo.svg) center/cover no-repeat;
+  background: url(../images/logo.svg) center/contain no-repeat;
   width: 22vw;
-  height: 15vh;
+  height: 17vh;
   top: 20%;
   left: 76%;
 }
 
 /* ----------------------------------------------------- */
-
-/* квадратик с плюсами и минусами */
-.fifth_rectangle {
-  background-image: url("../images/dots2.svg");
-  border-style: solid;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-  flex: 1;
-  margin-bottom: 4vh;
-  border-color: #000000;
-  border-bottom-width: 6px;
-  border-left-width: 6px;
-  border-right-width: 6px;
-}
-
-.white_background {
-  background-image: url("../images/white_background.svg");
-  background-size: contain;
-  background-repeat: no-repeat;
-  position: absolute;
-  top: 52.5%;
-  left: 50%;
-  width: 100%;
-  max-width: 100%;
-  max-height: 100%;
-  height: 72%;
-  transform: translate(-50%, -50%);
-}
-
-.flex_symbols {
-  display: flex;
-  height: 100%;
-  width: 100%;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-.flex_horizontal {
-  position: absolute;
-  left: 9%;
-  top: 17%;
-  display: flex;
-  height: 65%;
-  width: 100%;
-  max-width: 100%;
-  max-height: 100%;
-  justify-content: space-between;
-}
-
-.sixth_rectangle {
-  border-style: solid;
-  /* width: 100%; */
-  height: 16%;
-  position: relative;
-  /* flex: 1; */
-  border-color: #000000;
-  padding: 1vw;
-  border-left-width: 6px;
-  border-right-width: 6px;
-  border-top-width: 6px;
-}
-
-/* .stripe {
-  background-image: url("../images/polosochka.svg");
-  background-size: contain;
-  background-repeat: no-repeat;
-  position: absolute;
-  top: 47%;
-  left: 0%;
-  width: 100%;
-  max-width: 100%;
-  max-height: 100%;
-  height: 28vh;
-}
-
-.round_dash {
-  background-image: url("../images/round_with_dash.svg");
-  background-size: contain;
-  background-repeat: no-repeat;
-  position: absolute;
-  top: -13%;
-  left: 15%;
-  width: 6%;
-  max-width: 100%;
-  max-height: 100%;
-  height: 100%;
-  animation: move-zigzag-forward 4s infinite linear;
-}
-
-.round_dash:hover {
-  animation-play-state: paused;
-} */
-
-.third {
-  height: 70vh;
-  width: 100vw;
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
-
-.left_block2 {
-  /* flex: 0 0 60vw; Ширина блока равна 60% от ширины окна просмотра */
-  /* min-width: 52%; */
-  margin-right: 2vw;
-  margin-left: 2vw;
-  flex: 2;
-  height: 100%;
-}
-
-/* обернула в div и вид колонки */
-.right_block2 {
-  min-width: 40%;
-  margin-right: 2vw;
-  display: flex;
-  flex-direction: column;
-  /* flex: 0 0 38vw; Ширина блоков равна 38% от ширины окна просмотра */
-  justify-content: space-between; /* Распределение блоков с вертикальным отступом */
-  flex: 1;
-  /* height: 98vh; */
-}
-
-.seventh_rectangle {
-  background-image: url("../images/stripes.svg");
-  background-repeat: no-repeat;
-  border-style: solid;
-  background-size: cover;
-  min-width: 40%;
-  min-height: 100%;
-  position: relative;
-  flex: 1;
-  border-color: #000000;
-  border-left-width: 8px;
-  border-right-width: 8px;
-}
-
-.eigth_rectangle {
-  background-image: url("../images/stripes_right.svg");
-  border-style: solid;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-  flex: 1;
-  border-color: #000000;
-  border-left-width: 6px;
-  border-right-width: 6px;
-}
-
-/* квадратик с человечком */
-/* .first_rectangle {
-  background-image: url("");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  border-style: solid;
-  min-width: 40%;
-  min-height: 100%;
-  position: relative;
-  /* порядок flexbox 1 */
-/* order: 1; 
-  border-color: #000000;
-  border-left-width: 6px;
-  border-right-width: 6px;
-  flex: 1;
-} */
-
-/* человечек */
-/* .person {
-  /* background-image: url("../images/person.svg");
-  position: absolute;
-  top: 52%;
-  left: 50%;
-  max-width: 100%;
-  max-height: 97%;
-  transform: translate(-50%, -50%);
-  background-size: cover;
-  background-repeat: no-repeat;
-  order: 1;
-} */
-
-/* глазик */
-/* .circle {
-  background-image: url("../images/circle.svg");
-  position: absolute;
-  background-repeat: no-repeat;
-  background-size: contain;
-  width: 8%;
-  height: 8%;
-  top: 40%;
-  left: 70%;
-  transform: translate(-50%, -50%);
-} */
-
-/* бровь */
-/* .eyebrow {
-  position: absolute;
-  content: url("../images/eye_brow.svg");
-  max-height: 100%;
-  max-width: 100%;
-  top: -60%;
-  left: -35%;
-  transform-origin: bottom right 60px;
-  animation-name: circle;
-  animation-duration: 2s;
-  animation-iteration-count: infinite;
-} */
-
-/* квадратик с облаком */
-/* .second_rectangle {
-  border-style: solid;
-  /* width: 40%; */
-/* height: 766px; */
-/* height: 75%;
-  position: relative;
-  flex: 1;
-  margin-bottom: 4vh;
-  border-color: #000000;
-  border-bottom-width: 6px;
-  border-left-width: 6px;
-  border-right-width: 6px;
-} */
-
-/* .cloud {
-  /* background-image: url(../images/cloud_all.svg);
-  position: absolute;
-  top: 9%;
-  left: 1%;
-  max-height: 100%;
-  max-width: 100%;
-  background-size: cover;
-  animation: moveCloud 2s linear infinite alternate;
-} */
-
-/* квадратик с бегущим лого */
-/* .third_rectangle {
-  border-style: solid;
-  height: 15%;
-  position: relative;
-  border-color: #000000;
-  padding: 1vw;
-  border-left-width: 6px;
-  border-right-width: 6px;
-  border-top-width: 6px;
-} */
-
-/* .ctrlz {
-  background-image: url("../images/logo_run.svg");
-  height: 16vh;
-  max-width: 100%;
-  margin-top: 0;
-  overflow: hidden;
-  animation: run_logo 4s linear infinite;
-} */
-
-/* 2 секшн */
-/* .second {
-  height: 70vh;
-  width: 100vw;
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-} */
-
-/* 4 квадратик */
-/* .fourth_rectangle {
-  background-image: url("../images/dots.svg");
-  background-repeat: no-repeat;
-  border-style: solid;
-  background-size: cover;
-  min-width: 40%;
-  min-height: 100%;
-  position: relative;
-  flex: 1;
-  border-color: #000000;
-  border-left-width: 8px;
-  border-right-width: 8px;
-} */

@@ -27,7 +27,7 @@
     ); /* Начальная и конечная позиции (нулевая высота) */
   }
   50% {
-    transform: translateY(-40px); /* Высота подъема */
+    transform: translateY(-10%); /* Высота подъема */
   }
 }
 
@@ -200,12 +200,64 @@
   100% {
     transform: translateX(
       0
-    ); /* Начальная и конечная позиции (нулевая высота) */
+    ); /* Начальная и конечная позиции */
   }
   50% {
-    transform: translateX(40px); /* Высота подъема */
+    transform: translateX(12%);  /* Перемещение по оси Х */
   }
 }
+
+@keyframes move_schema {
+  0%,
+  100% {
+    transform: translateX(
+      0
+    ); /* Начальная и конечная позиции */
+  }
+  25% {
+    transform: translateX(-5%)
+  }
+
+  75% {
+    transform: translateX(5%); /* Высота подъема */
+  }
+}
+
+/* @media (max-width: 1024px) {
+  @keyframes move_schema {
+    0%,
+    100% {
+      transform: translateX(
+        0
+      ); 
+    }
+    25% {
+      transform: translateX(-5%)
+    }
+  
+    75% {
+      transform: translateX(5%); 
+    }
+  }
+}
+
+@media (max-width: 770px) {
+  @keyframes move_schema {
+    0%,
+    100% {
+      transform: translateX(
+        0
+      ); 
+    }
+    25% {
+      transform: translateX(-5%)
+    }
+  
+    75% {
+      transform: translateX(5%); 
+    }
+  }
+} */
 
 @keyframes change_color_of_black {
   0%,
