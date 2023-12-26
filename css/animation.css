@@ -195,6 +195,18 @@
   }
 }
 
+@keyframes move_arrows {
+  0%,
+  100% {
+    transform: translateX(
+      0
+    ); /* Начальная и конечная позиции (нулевая высота) */
+  }
+  50% {
+    transform: translateX(40px); /* Высота подъема */
+  }
+}
+
 @keyframes change_color_of_black {
   0%,
   100% {
