@@ -72,10 +72,10 @@ body {
   content: "";
   z-index: 2;
   background: url(../images/eye_brow.svg) center/contain no-repeat;
-  width: 9%;
+  width: 10%;
   height: 13%;
   bottom: 62%;
-  left: 65%;
+  left: 63%;
   transform: translate(-50%, -50%);
   transform-origin: bottom right 50px;
   animation: circle 2s infinite;
@@ -313,7 +313,7 @@ body {
 .container {
   position: relative;
   bottom: 27%;
-  left: 33%;
+  left: 39%;
   height: 51%;
   width: 32%;
   max-width: 100vw;
@@ -324,26 +324,33 @@ body {
 .black_round {
   background-image: url("../images/flex_black_round.svg");
   background-repeat: no-repeat;
+  background-size: contain;
+  width: 22%;
   animation: change_color_of_black 0.5s infinite;
 }
 
 .white_round {
   background-image: url("../images/flex_white_round.svg");
   background-repeat: no-repeat;
+  background-size: contain;
+  width: 22%;
   animation: change_color_of_white 0.5s infinite;
 }
 
 .plus {
   background-image: url("../images/plus.svg");
   background-repeat: no-repeat;
+  background-size: contain;
+  width: 22%;
 }
 
 .minus {
   background-image: url("../images/minus.svg");
   background-repeat: no-repeat;
+  background-size: contain;
   /* background-position: left; */
-  width: 32%;
-  height: 51%;
+  width: 22%;
+  /* height: 51%; */
 }
 
 .zigzag {

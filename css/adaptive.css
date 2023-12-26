@@ -172,7 +172,7 @@
   }
 
   .fourth-section {
-    height: 100vh;
+    height: 68vh;
     margin-bottom: 0;
   }
 
@@ -196,6 +196,21 @@
     height: 100%;
     max-height: 100%;
     max-width: 100%;
+  }
+
+  .head1::before {
+    width: 9%;
+    height: 14%;
+    bottom: 62%;
+    left: 61%;
+  }
+
+  .figure3 {
+    background: none;
+  }
+
+  .atom {
+    background: none;
   }
 
   .plusmininside {
@@ -268,9 +283,57 @@
     height: 1vh;
   }
 
+  .vans {
+    top: 0;
+    height: 100%;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+  }
+
+  .void_rectangle {
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+  }
+
+  .void_rectangle2 {
+    border: 2px solid black;
+    height: 85%;
+    width: 89%;
+    top: 7.5%;
+    left: 6%;
+  }
+
+  .anim_text {
+    position: absolute;
+    height: 12%;
+    width: 32%;
+    top: 39%;
+    left: 4%;
+  }
+
+  .anim_text2 {
+    height: 12%;
+    width: 54%;
+    top: 52%;
+    left: 4%;
+  }
+
+  .span,
+  .span2 {
+    font-size: 4vw;
+  }
+
+  .rightfig3 {
+    left: 68%;
+    top: 9%;
+    width: 23vw;
+    height: 2.5vh;
+    font-size: 4vw;
+  }
+
   .cloud1 {
-    top: 10%;
-    height: 92%;
+    top: 11%;
+    height: 95%;
     width: 100%;
   }
 
@@ -295,8 +358,8 @@
 
   .hse {
     width: 33vw;
-    height: 6vh;
-    top: 28%;
+    height: 7vh;
+    top: 23%;
     left: 65%;
   }
 
@@ -324,5 +387,14 @@
     &:hover {
       animation-direction: reverse;
     }
+  }
+}
+
+@media (max-width: 360px) {
+  .head1::before {
+    width: 8%;
+    height: 12%;
+    bottom: 62%;
+    left: 59%;
   }
 }
